@@ -1,0 +1,124 @@
+.sp-force-hide {
+	display: none;
+}
+
+.sp-form[sp-id="133420"] {
+	display: block;
+	background: #ffffff;
+	padding: 15px;
+	width: 450px;
+	max-width: 100%;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-color: #dddddd;
+	border-style: solid;
+	border-width: 1px;
+	font-family: "Roboto", "Helvetica Neue", sans-serif;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto;
+}
+
+.sp-form[sp-id="133420"] input[type="checkbox"] {
+	display: inline-block;
+	opacity: 1;
+	visibility: visible;
+}
+
+.sp-form[sp-id="133420"] .sp-form-fields-wrapper {
+	margin: 0 auto;
+	width: 420px;
+}
+
+.sp-form[sp-id="133420"] .sp-form-control {
+	background: #ffffff;
+	border-color: #cccccc;
+	border-style: solid;
+	border-width: 1px;
+	font-size: 15px;
+	padding-left: 8.75px;
+	padding-right: 8.75px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	height: 35px;
+	width: 100%;
+}
+
+.sp-form[sp-id="133420"] .sp-field label {
+	color: #444444;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.sp-form[sp-id="133420"] .sp-button {
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background-image: $btn_send_pulse_bg;
+	color: #ffffff;
+	width: auto;
+	font-weight: 700;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+}
+
+.sp-form[sp-id="133420"] .sp-button-container {
+	text-align: center;
+}
+
+.sp-popup-outer {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.senpulse-subscribe {
+	color: $send_pulse_color;
+	font-weight: bold;
+	padding: 40px 15px;
+	border: 3px dashed  $send_pulse_border;
+	width: auto;
+	max-width: 1170px;
+	margin: 50px auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.senpulse-subscribe [sp-show-form] {
+	color: #fff !important;
+	padding: 13px 30px;
+	border-radius: 4px;	
+	background: $btn_send_pulse_bg;
+	border-width: 1px;
+	border-color: $btn_send_pulse_border;
+	border-style: solid;
+	margin-left: 30px;
+	cursor: pointer;
+}
+
+.senpulse-subscribe [sp-show-form]:hover {
+	
+	background: $btn_send_pulse_bg_hover;
+}
+
+@media (max-width:680px) {
+	.senpulse-subscribe {
+		flex-direction: column;
+
+	}
+
+	.text-sendpulse {
+		text-align: center;
+	}
+
+	.senpulse-subscribe [sp-show-form] {
+		margin-top: 30px;
+		margin-left: 0;
+	}
+}
+.sp-link-wrapper.sp-brandname__left{
+	height: 0;
+	opacity:0;
+}

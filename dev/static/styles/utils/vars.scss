@@ -1,0 +1,73 @@
+// Colors
+$white: rgba(255, 255, 255, 1);
+$black: rgba(0,0,0, 1);
+$yellow: rgba(254, 164, 16, 1);
+$orange: rgba(249, 83, 0, 1);
+$orange_darken: darken(rgba(249, 83, 0, 1),6.25%);
+$red: rgba(221, 4, 4, 0.8);
+$red_darken: rgba(159, 3, 3, 1);
+$green: rgba(12, 119, 12, 0.8);
+$green_darken: rgba(9, 78, 9, 1);
+$green_lighten: rgba(12, 119, 12, 1);
+
+// Background
+$body_bg:$black;
+$header_bg_color: $black;
+$footer_bg_color: $black;
+
+
+// buttons
+$btn_color: $white;
+$btn_color_hover: $yellow;
+$btn_bg: $green;
+$btn_border: $green_darken;
+$btn_bg_hover: $green_lighten;
+
+// sendpulse
+$btn_send_pulse_bg: linear-gradient(to top, $green, $green_darken);
+$btn_send_pulse_bg_hover: linear-gradient(to top, darken($green,6.25%), darken($green_darken,6.25%));;
+$btn_send_pulse_border:$green_darken;
+$btn_send_pulse_color:$green_darken;
+$send_pulse_color:$yellow;
+$send_pulse_border:$yellow;
+
+// smartbasket
+$smartbasket_modal_color: $green_darken;
+
+
+// nav/menu
+$burger_color:$white;
+$nav_mobil_bg:$black;
+$nav_mobil_bg:$white;
+$nav_color: $white;
+$nav_color_hover:$yellow;
+$nav_border_hover:$yellow;
+$scroll_top_bg_hover: $btn_bg_hover;
+$scroll_top_bg: $btn_bg;
+$scroll_top_color: $btn_color;
+$scroll_top_border: $btn_border;
+
+// content
+$content_title:$yellow;
+$content_sub_title:$yellow;
+
+
+
+// Sizes
+$base-font-size: 16px;
+
+$breakpoints: (
+  "phone"       : 400px,
+  "phone-wide"  : 480px,
+  "phablet"     : 560px,
+  "tablet-small": 640px,
+  "tablet"      : 768px,
+  "tablet-wide" : 1024px,
+  "desktop"     : 1248px,
+  "desktop-wide": 1440px
+);
+
+$content-size: 1200px;
+
+// Fonts
+$body_color: $white;
