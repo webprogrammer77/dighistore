@@ -148,6 +148,9 @@ $(function() {
 	var pathname = window.location.pathname;
 	var current_href = pathname.replace('/', '');
 	var nav_links = $('.nav-header__link');
+	if(pathname == '/'){
+		current_href = 'index.html';
+	}
 	
 	$.each(nav_links, function(index, value) {
 		if($(this).attr('href') == current_href){
