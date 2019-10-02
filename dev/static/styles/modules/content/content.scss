@@ -86,8 +86,16 @@ p.product-desc__title-text{
 .product__pic{
 	text-align:center;
 	position:relative;
-	min-height:300px
+	min-height:300px;
 }
+@media(max-width:640px){
+	.product__pic{
+		text-align:center;
+		position:relative;
+		min-height:auto;
+	}
+}
+
 .product__img{
 	max-width: 300px;
 	max-height:300px;

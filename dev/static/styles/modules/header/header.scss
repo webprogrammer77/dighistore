@@ -1,9 +1,7 @@
 header.header {
 
 	background: $header_bg_color;
-	display: flex;
-	align-items: center;
-
+	
 	.container {
 		display: flex;
 		flex-direction: row;

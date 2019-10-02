@@ -1,5 +1,25 @@
 header.header
 	.container
+		nav.nav-header.nav-header-top
+			ul.nav-header__list
+				li.nav-header__item
+					a(href="#" class="nav-header__link")
+						address
+							i.fas.fa-envelope
+							|Email:
+							span.phone-main
+								| mail@dighistore.ru
+				li.nav-header__item
+					a(href="kontakt.html" class="nav-header__link")
+						i.fas.fa-phone
+						|Контакты
+						//- span.phone-main 
+						//- 	| +7-812-409-48-10
+				li.nav-header__item
+					a(href="dostavka.html" class="nav-header__link")
+						i.fas.fa-truck
+						|Доставка
+	.container
 		.logo
 			a(class="logo__link" href="index.html")
 				img(class="logo__img" src="static/images/general/logo.svg" alt="dighistore")
@@ -31,3 +51,13 @@ header.header
 					a(href="other.html" class="nav-header__link")
 						i.fas.fa-book
 						|Другие книги
+				li.nav-header__item.nav-header__item--mobil
+					a(href="kontakt.html" class="nav-header__link")
+						i.fas.fa-phone
+						|Контакты
+						//- span.phone-main 
+						//- 	| +7-812-409-48-10
+				li.nav-header__item.nav-header__item--mobil
+					a(href="dostavka.html" class="nav-header__link")
+						i.fas.fa-truck
+						|Доставка

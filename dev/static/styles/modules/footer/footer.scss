@@ -6,22 +6,3 @@ footer {
 	font-family:"Roboto",sans-serif;
 	padding:10px;
 }
-.nav-footer li{
-	padding:5px;
-}
-.nav-footer a{
-	display:inline-block;
-	color:$nav_color;
-	transition:0.3s;
-}
-.nav-footer a:hover{
-	color:$nav_color_hover;
-	border-bottom: 2px solid $nav_border_hover;
-	margin-bottom:-2px;
-}
-.nav-footer i{
-	padding-right:7px;
-}
-ul.nav-footer__list li.nav-footer__item{}
-
-ul.nav-footer__list li.nav-footer__item a.nav-header__link{}
