@@ -119,6 +119,16 @@ p.product-desc__title-text {
 
 }
 
+@media(min-width:620px) {
+	.product__img {
+		transition: 0.3s;
+	}
+
+	.product__img:hover {
+		transform: scale(1.7);
+	}
+}
+
 .product__img-sale {
 	width: 70px;
 	position: absolute;
