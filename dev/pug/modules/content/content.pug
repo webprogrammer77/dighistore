@@ -6,7 +6,11 @@ section.section.section-one
 		.section__row.product-list
 			.section__col.product
 				.product__pic
-					img.product__img(src="static/images/general/placeholder.svg" data-src="static/images/content/bukvar.jpg" alt="Букварь (цветной, увеличенного формата). С.П. Редозубов. Учпедгиз 1955")
+					.flipper
+						.front
+							img.product__img(src="static/images/general/placeholder.svg" data-src="static/images/content/bukvar.jpg" alt="Букварь (цветной, увеличенного формата). С.П. Редозубов. Учпедгиз 1955")
+						.back
+							img.product__img(src="static/images/general/placeholder.svg" data-src="static/images/content/bukvar1.jpg" alt="Букварь (цветной, увеличенного формата). С.П. Редозубов. Учпедгиз 1955")
 				.product__descripton
 					.product__name Букварь (цветной, увеличенного формата). С.П. Редозубов. Учпедгиз 1955
 					p.product-desc__text
@@ -24,10 +28,15 @@ section.section.section-one
 					.product__quantity(style="display:none;")
 			.section__col.product
 				.product__pic
-					img.product__img(src="static/images/general/placeholder.svg" data-src="static/images/content/metodich.jpg" alt="Методическое руководство к букварю. С. П. Редозубов и др. Учпедгиз 1956")
+					.flipper
+						.front
+							img.product__img(src="static/images/general/placeholder.svg" data-src="static/images/content/metodich.jpg" alt="Методическое руководство к букварю. С. П. Редозубов и др. Учпедгиз 1956")
+						.back
+							p.product-desc__text Эта книга поможет родителям обучать грамоте своих детей. 3-е издание Государственно-педагогического издательства министерства просвещения РСФСР. В книге 190 страниц.
+
 				.product__descripton
 					.product__name Методическоe руководство к букварю. С. П. Редозубов и др. Учпедгиз 1956
-					p.product-desc__text Эта книга поможет родителям обучать грамоте своих детей. 3-е издание Государственно-педагогического издательства министерства просвещения РСФСР. В книге 190 страниц.
+					//- p.product-desc__text Эта книга поможет родителям обучать грамоте своих детей. 3-е издание Государственно-педагогического издательства министерства просвещения РСФСР. В книге 190 страниц.
 					.product__price.product__add-to-cart-button(
 						data-sb-id-or-vendor-code ="1116580"
 						data-sb-product-name="Методическое руководство к букварю. С. П. Редозубов и др. Учпедгиз 1956"
@@ -417,13 +426,13 @@ section.section.section-three
 						li 16) Арифметика для 1 класса. A.C. ПЧEЛKO, Г.Б. ПOЛЯK. Учпедгиз 1955;
 						li 17) Учебник арифметики для начальной школы. Часть I. Попова Н.С. Учпедгиз 1936;
 						.product__old-price
-							| Старая цена: 
+							| Старая цена:
 							span.price.price--old 3425 руб.
 					.product__price.product__add-to-cart-button(
 						data-sb-id-or-vendor-code="1123722"
-						data-sb-product-name="Комплект учебников для 1-го класса(без органайзера)" 
-						data-sb-product-price="3255" 
-						data-sb-product-quantity="1" 
+						data-sb-product-name="Комплект учебников для 1-го класса(без органайзера)"
+						data-sb-product-price="3255"
+						data-sb-product-quantity="1"
 						data-sb-product-img="static/images/content/komplekt_1.png")
 						i.fas.fa-cart-plus
 						span.price 3255
