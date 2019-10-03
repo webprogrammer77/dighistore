@@ -124,7 +124,7 @@ p.product-desc__title-text {
 		transition: 0.3s;
 	}
 
-	.product__img:hover {
+	.product__img:not([class="product__img no-scale"]):hover {
 		transform: scale(1.7);
 	}
 }
@@ -194,8 +194,9 @@ p.product-desc__text {
 	font-weight: bold;
 
 	span.price.price--old {
+		padding-left:10px;
 		font-size: 24px;
-		color: grey;
+		color: darken($white,50.5%);
 		text-decoration: line-through;
 	}
 }
@@ -206,19 +207,19 @@ p.product-desc__text {
 	text-align: center;
 	padding: 7px 7px;
 	margin-top: auto;
-	color: #fff;
-	background: rgba(12, 119, 12, 0.8);
+	color: $btn_color;
+	background: $btn_bg;
 	width: 155px;
 	margin: 0 auto;
-	border-bottom: 2px solid rgba(9, 78, 9, 1);
+	border-bottom: 2px solid $btn_border;
 	border-radius: 4px;
 	transition: 0.3s;
 }
 
 .product__price:hover {
 	cursor: pointer;
-	background: rgba(12, 119, 12, 1);
-	border-bottom: 1px solid rgba(9, 78, 9, 1);
+	background: $btn_bg_hover;
+	border-bottom: 1px solid $btn_border;
 	margin-top: 1px;
 }
 

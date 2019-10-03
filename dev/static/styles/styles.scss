@@ -45,6 +45,9 @@ button { outline: none; }
 
 *, *:before, *:after { box-sizing: border-box; }
 
+address{
+	font-style:normal;
+}
 .wrapper {
   display: flex;
   flex-direction: column;
