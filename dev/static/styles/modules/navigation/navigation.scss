@@ -205,7 +205,9 @@ ul.nav-footer__list {
 ul.nav-footer__list li.nav-footer__item {
 	padding-right: 30px;
 }
-
+ul.nav-footer__list li.nav-footer__item:last-child {
+	margin-left: auto;
+}
 ul.nav-footer__list li.nav-footer__item a.nav-header__link {}
 
 nav.nav-header-top {
