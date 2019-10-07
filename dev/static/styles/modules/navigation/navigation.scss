@@ -43,7 +43,7 @@ nav.nav-header {
 		li.nav-header__item:hover a {
 			color: $nav_color_hover;
 			// border-bottom: 2px solid $nav_border_hover;
-			padding-top: 2px;
+			margin-bottom: 0px;
 			position: relative;
 			transition: 0.3s;
 
@@ -223,6 +223,10 @@ nav.nav-header-top a.nav-header__link {
 nav.nav-header-top a.nav-header__link:hover {
 	font-size: 14px;
 	color: $yellow !important;
+}
+nav.nav-header-top a.nav-header__link i {
+	display: flex;
+	min-width:25px;
 }
 
 .nav-header-top ul.nav-header__list {}
