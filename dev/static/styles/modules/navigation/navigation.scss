@@ -216,13 +216,13 @@ nav.nav-header-top {
 }
 
 nav.nav-header-top a.nav-header__link {
-	font-size: 14px;
-	color: $orange !important;
+	font-size: .88rem;
+	color: $nav-top_color !important;
 }
 
 nav.nav-header-top a.nav-header__link:hover {
-	font-size: 14px;
-	color: $yellow !important;
+	
+	color: $nav-top_color_hover !important;
 }
 nav.nav-header-top a.nav-header__link i {
 	display: flex;

@@ -1,11 +1,11 @@
 .section {
 	padding: 20px;
-	font-family: 'Roboto', Arial, sans-serif;
+	font-family: $base_font;
 }
 
 h1.main-title {
-	font-family: 'Cuprum', Arial, sans-serif;
-	font-size: 38px;
+	font-family: $title-font;
+	font-size: $title-font-size;
 	line-height: 1.4;
 	text-align: center;
 	color: $content_title;
@@ -15,7 +15,7 @@ h1.main-title {
 
 @media(max-width:620px) {
 	h1.main-title {
-		font-size: 30px;
+		font-size: $sub-title-font-size;;
 	}
 }
 
@@ -72,7 +72,7 @@ h1.main-title {
 h3.product-desc__title {
 	text-align: center;
 	padding-bottom: 20px;
-	font-size: 30px;
+	font-size: $sub-title_font-size;
 	//color:blue;
 	color: $content_sub_title;
 }
