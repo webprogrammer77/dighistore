@@ -149,10 +149,25 @@ $(function() {
 	var pathname = window.location.pathname;
 	var current_href = pathname.replace('/', '');
 	var nav_links = $('.nav-header__link');
+	var nav_sub_items = $('.nav-header__item--parent .nav-header__sub-list .nav-header__item');
+	var nav_item_parent = $('.nav-header__item.nav-header__item--parent');
 	if(pathname == '/'){
 		current_href = 'index.html';
 	}
+	setTimeout(function(){
+	$.each(nav_sub_items, function(index, value) {
+			if($(this).hasClass('active')){
+				$(this).parent().parent().addClass('active');
+				$(this).parent().hide();
+			}
+		});
+	},200)
 	
+	nav_item_parent.on('click touchend',function(e){
+		// $(this).toggleClass('active');
+		$(this).find('.nav-header__sub-list').toggle();
+		$(this).find('a.nav-header__sub-link').toggleClass('rotate');
+	});
 	$.each(nav_links, function(index, value) {
 		if($(this).attr('href') == current_href){
 			nav_links.not($(this)).parent().removeClass('active');

@@ -30,6 +30,9 @@
   background-color: $black;
   transform: rotateY(-180deg);
 }
+.back iframe{
+ opacity:0;
+}
 
 .flipper:hover .front {
   transform: rotateY(-180deg);
@@ -38,6 +41,9 @@
 .flipper:hover .back {
   transform: rotateY(-360deg);
 }
+.flipper:hover .back iframe{
+	opacity:1;
+ }
 
 .back p.product-desc__text {
   width: 300px;
