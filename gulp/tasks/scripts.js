@@ -1,5 +1,8 @@
 let uglify = require('gulp-uglify'),
-    concat = require('gulp-concat'),
+		concat = require('gulp-concat'),
+		plumber = require("gulp-plumber"), // модуль для отслеживания ошибок
+		rigger = require("gulp-rigger"), // модуль для импорта содержимого одного файла в другой
+		sourcemaps = require("gulp-sourcemaps"), // модуль для генерации карты исходных файлов
     scriptsPATH = {
         "input": "./dev/static/js/",
         "ouput": "./build/static/js/"
@@ -7,13 +10,15 @@ let uglify = require('gulp-uglify'),
 
 module.exports = function () {
     $.gulp.task('libsJS:dev', () => {
-        return $.gulp.src(['node_modules/svg4everybody/dist/svg4everybody.min.js'])
+        return $.gulp.src(['node_modules/svg4everybody/dist/svg4everybody.min.js',
+        "node_modules/jquery/dist/jquery.js"])
             .pipe(concat('libs.min.js'))
             .pipe($.gulp.dest(scriptsPATH.ouput));
     });
 
     $.gulp.task('libsJS:build', () => {
-        return $.gulp.src(['node_modules/svg4everybody/dist/svg4everybody.min.js'])
+        return $.gulp.src(['node_modules/svg4everybody/dist/svg4everybody.min.js',
+        "node_modules/jquery/dist/jquery.js"])
             .pipe(concat('libs.min.js'))
             .pipe(uglify())
             .pipe($.gulp.dest(scriptsPATH.ouput));

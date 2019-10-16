@@ -8,8 +8,21 @@ let plumber = require('gulp-plumber'),
     stylesPATH = {
         "input": "./dev/static/styles/",
         "ouput": "./build/static/css/"
-    };
-
+    },
+		autoprefixerList = [
+			"Chrome >= 45",
+			"Firefox ESR",
+			"Edge >= 11",
+			"Explorer >= 8",
+			"iOS >= 9",
+			"Safari >= 9",
+			"Android >= 4.4",
+			"Opera >= 30"
+		];
+		//.pipe(autoprefixer({
+			// browsers: autoprefixerList,
+			// overrideBrowserslist:  ['last 3 versions']
+	//}))
 module.exports = function () {
     $.gulp.task('styles:dev', () => {
         return $.gulp.src(stylesPATH.input + 'styles.scss')
@@ -28,7 +41,8 @@ module.exports = function () {
         return $.gulp.src(stylesPATH.input + 'styles.scss')
             .pipe(scss())
             .pipe(autoprefixer({
-                 overrideBrowserslist:  ['last 3 versions']
+								// browsers: autoprefixerList,
+                 overrideBrowserslist:  ['last 16 versions']
             }))
             .pipe(csscomb())
             .pipe($.gulp.dest(stylesPATH.ouput))
@@ -37,7 +51,7 @@ module.exports = function () {
         return $.gulp.src(stylesPATH.input + 'styles.scss')
             .pipe(scss())
             .pipe(autoprefixer({
-                 overrideBrowserslist:  ['last 3 versions']
+                 overrideBrowserslist:  ['last 16 versions']
             }))
             .pipe(csscomb())
             .pipe(csso())
