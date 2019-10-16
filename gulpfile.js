@@ -48,3 +48,4 @@ $.gulp.task(
 );
 $.gulp.task("default", $.gulp.series("dev", $.gulp.parallel("watch", "serve")));
 $.gulp.task("deploy", $.gulp.series("deploy"));
+$.gulp.task("deploy:beget", $.gulp.series("deploy:beget"));
