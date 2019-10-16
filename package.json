@@ -37,7 +37,6 @@
     "vinyl-ftp": "^0.6.1"
   },
   "dependencies": {
-    
     "bootstrap": "latest",
     "font-awesome": "latest",
     "gulp-rigger": "^0.5.8",
