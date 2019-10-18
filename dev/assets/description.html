@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- <script src="smartbasket/smartbasket.min.js?v=<?=md5(time())?>"></script> -->
+	<link rel="stylesheet" type="text/css" href="static/css/styles.min.css?v=<?=md5(time())?>">
+	<title>description</title>
+</head>
+
+<body>
+
+
+	<div class="box mfilter-box mfilter-content_top init" id="mfilter-box-1">
+		<div class="box-heading">Отфильтруйте товар:</div>
+		<div class="box-content mfilter-content">
+			<ul>
+				<li data-type="select" data-base-type="attribute" data-id="7227" data-seo-name="7227-tip-tovara"
+					data-display-options-as="inline_horizontal" data-display-live-filter="1" data-display-list-of-items=""
+					class="mfilter-filter-item mfilter-select mfilter-attribute mfilter-attributes">
+
+					<div class="mfilter-heading mfilter-collapsed">
+						<div class="mfilter-heading-content">
+							<div class="mfilter-heading-text"><span>Тип товара</span></div>
+							<i class="mfilter-head-icon"></i>
+						</div>
+					</div>
+
+					<div class="mfilter-content-opts">
+						<div class="mfilter-opts-container">
+							<div class="mfilter-content-wrapper">
+								<div class="mfilter-options">
+									<div class="mfilter-tb">
+										<div class="mfilter-option mfilter-select mfilter-first-child mfilter-last-child">
+											<select>
+												<option value="">---</option>
+												<option value="Кимоно для карате" data-name="Кимоно для карате"
+													id="mfilter-opts-select-1-7227-5f4030896a4423ee1c2a94cce9422af6">(40) Кимоно для карате
+												</option>
+												<option value="Пояс для карате" data-name="Пояс для карате"
+													id="mfilter-opts-select-1-7227-00028a4014f59c98b99d2e06a1f10c30">(7) Пояс для карате</option>
+												<option value="Пояс для карате детский" data-name="Пояс для карате детский"
+													id="mfilter-opts-select-1-7227-ba3bcc7254e61179ae0c432907c3819a">(1) Пояс для карате детский
+												</option>
+												<option value="Сумка для соревнований" data-name="Сумка для соревнований"
+													id="mfilter-opts-select-1-7227-2975d106fa432bc4bdf09a9625a4b899">(2) Сумка для соревнований
+												</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li data-type="select" data-base-type="attribute" data-id="7231" data-seo-name="7231-rost"
+					data-display-options-as="inline_horizontal" data-display-live-filter="1" data-display-list-of-items=""
+					class="mfilter-filter-item mfilter-select mfilter-attribute mfilter-attributes">
+				</li>
+
+			</ul>
+			<div class="mfilter-button mfilter-button-bottom"><a href="#" class="mfilter-button-reset"><i
+						class="mfilter-reset-icon"></i>Отменить фильтр</a></div>
+		</div>
+	</div>
+
+	<div class="row category__description">
+		Kamikaze – одна из самых первых марок кимоно для каратэ, которая появилась на территории бывшего Советского Союза и
+		многие каратисты, которые занимались в то время, до сих пор предпочитают каратэги марки Kamikaze. Все кимоно шьются
+		по
+		дизайну Сэнсэя ХИРОШИ ШИРАИ, 10 Дан Шотокан и Фрэнка Шуберта. Эти кимоно доведены до совершенства и учитывают
+		практически все требования спортсменов. Хороший покрой, разнообразные характеристики. Выпускаются так же модели с
+		ярлыком Approved WKF. Так же есть модели одобренные Олимпийским комитетом и выпускаются с логотипом "Токио 2020" .
+		<iframe class="category__iframe" width="400.000" height="280.000" src="https://www.youtube.com/embed//RNwAFrvnA4M"
+			frameborder="0" allowfullscreen=""></iframe>
+	</div>
+	<script src="static/js/libs.min.js?v=<?=md5(time())?>"></script>
+	<!-- <script src="static/js/jquery-3.3.1.min.js>"></script> -->
+	<!-- <script src="static/js/main.min.js?v=<?=md5(time())?>"></script> -->
+	<style>
+		/* .link-list{
+			margin:20px auto;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content:center;
+		}
+		.link-list .link-list__link{
+			color: green;
+			text-decoration:none;
+			border-bottom:1px solid green;
+			transition:0.3s;
+		}
+		.link-list .link-list__link:hover{
+			color: blue;
+			text-decoration:none;
+			border-bottom:1px solid blue;
+		}
+		.link-list .link-list__link i.fa{
+			margin-right:7px;
+			color:orange;
+		} */
+	</style>
+
+	<script>
+		$(function () {
+
+			setTimeout(function () {
+				var desc_block = $('.row.category__description');
+
+				var options_tip = $('li[data-id="7227"] select option');
+				if(options_tip === undefined){
+					return;
+				}
+
+				var option_links =
+					'<style>.link-list{margin:20px auto;display: flex;flex-wrap: wrap;justify-content:center;}.link-list .link-list__link{color: green;text-decoration:none;border-bottom:1px solid green;transition:0.3s;}.link-list .link-list__link:hover{color: blue;text-decoration:none;border-bottom:1px solid blue;}.link-list .link-list__link i.fa{margin-right:7px;color:orange;}</style><div class="link-list"></div>';
+				//var current_param = window.location.href.substring(window.location.href.lastIndexOf('?')+1);
+				//var current_param = window.location.search.substring(1);
+				var current_href = window.location.href.split('?')[0];
+				//var current_href = $('meta[property=og\\:url]').attr('content');
+				desc_block.append(option_links);
+				setTimeout(function () {
+					options_tip.each(function (index, value) {
+
+						var option_name = $(this).val();
+
+						if (option_name != '') {
+							var link = '<a class="link-list__link" style="margin-right:20px;" href="' + current_href +
+								'?mfp=7227-tip-tovara[' +
+								option_name + ']"><i class="fa fa-link"></i> ' + option_name + '</a>'
+						}
+						$('.link-list').append(link);
+
+
+					});
+				}, 0);
+			}, 0);
+		});
+	</script>
+
+</body>
+
+</html>
