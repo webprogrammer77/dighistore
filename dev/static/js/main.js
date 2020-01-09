@@ -189,7 +189,7 @@ $(function() {
 	
 	nav_item_parent.on('click touchend',function(e){
 		// $(this).toggleClass('active');
-		$(this).find('.nav-header__sub-list').toggle();
+		//$(this).find('.nav-header__sub-list').toggle();
 		$(this).find('a.nav-header__sub-link').toggleClass('rotate');
 	});
 	$.each(nav_links, function(index, value) {
@@ -214,6 +214,14 @@ $(function() {
   $(document).on("click", ".nav-header__link", function(e) {
     setProductsLocalstorage();
   });
+
+	if($(window).width() < 912){
+		$('.nav-header__link.nav-header__sub-link').on('click', function(e){
+		e.preventDefault();
+		$(this).siblings('.nav-header__sub-list').toggle();
+	});
+	}
+	
 
   /*-------scrolTop------------*/
 
