@@ -1,19 +1,88 @@
 .header__basket-min
-section.section.section-one
+section.section.section-one.product
   .container
-    h1.main-title
-    .section__row.product-list
-      .section__col.product
-        .product__pic
-          img.product__img(src='static/images/content/chelovek_nauchivshiy_mir.jpg', alt='Человек, научивший мир читать. История Великой информационной революции')
-        .product__descripton
-          .product__name
-            | Человек, научивший мир читать. История Великой информационной революции, Чепикова К.
-          p.product-desc__text
-            | Мы живем в эпоху новой информационной революции, когда гаджет размером с ладонь обеспечивает доступ ко всем знаниям человечества. Мог ли кто-то, кроме самых смелых писателей-фантастов, вообразить подобное еще полвека назад?
-          .product__price.product__add-to-cart-button(data-sb-id-or-vendor-code='1124403', data-sb-product-name='Человек, научивший мир читать. История Великой информационной революции, Чепикова К.', data-sb-product-price='580', data-sb-product-quantity='1', data-sb-product-img='static/images/content/chelovek_nauchivshiy_mir.jpg')
-            i.fa.fa-cart-plus
-            span.price 580
-            | руб.
+    .product__main
+      .product__pic
+        img.product__img(src='static/images/content/chelovek_nauchivshiy_mir.jpg', alt='Человек, научивший мир читать. История Великой информационной революции')
+      .product__direction
+        h1.main-title.product__name
+          | Человек, научивший мир читать. История Великой информационной революции, Чепикова К.
+        .product__price.product__add-to-cart-button(data-sb-id-or-vendor-code='1124403', data-sb-product-name='Человек, научивший мир читать. История Великой информационной революции, Чепикова К.', data-sb-product-price='580', data-sb-product-quantity='1', data-sb-product-img='static/images/content/chelovek_nauchivshiy_mir.jpg')
+          i.fa.fa-cart-plus
+          span.price 580
+          | руб.
           .product__quantity(style='display:none;')
+    .product__description
+      h2.product__subtitle Описание
+      p.product-desc__text
+        | Мы живем в эпоху новой информационной революции, когда гаджет размером с ладонь обеспечивает доступ ко всем знаниям человечества. Мог ли кто-то, кроме самых смелых писателей-фантастов, вообразить подобное еще полвека назад? Эта увлекательная книга посвящена истории ВЕЛИКОЙ ИНФОРМАЦИОННОЙ РЕВОЛЮЦИИ – массовому распространению печатного текста как основного носителя информации, и одному из тех, кто ее главных героев, создателю первой в мире издательской империи Кристофу Плантену. Сын слуги, чудом получивший хорошее образование; безвестный подмастерье без средств и связей, перевернувший печатный бизнес, монополизированный несколькими кланами; преступник, разыскиваемый католическими властями, и официальный типограф испанского короля; тайный религиозный сектант и издатель самых передовых и научных трудов своего времени. КРИСТОФ ПЛАНТЕН ПРИНЕС ПЕЧАТНУЮ КНИГУ В КАЖДЫЙ ДОМ, сделав ее действительно массовой и доступной для всех. Биография Плантена – это история стремительных взлетов и сокрушительных падений: несколько раз он терял почти все и отстраивал свою империю заново. Как ему это удавалось? И вообще, каково это быть пионером новых информационных технологий, бизнес-стратегий и маркетинговых решений в хай-тек сфере XVI столетия? "Иоганн Гутенберг изобрел книгопечатание, но именно Кристоф Плантен создал массовое книгоиздание и упаковал в книги большие массивы информации. Перед вами первая на русском языке биография Стива Джобса и Билла Гейтса XVI века: изящная, увлекательная и вдохновляющая история о прорыве в будущее". Егор Яковлев, директор научно-просветительского проекта "Цифровая история"
+
+    .product-feature
+      h2.product__subtitle Характеристики
+      .product-feature__table(style='padding: 5px; margin: 0px; display: flex; flex-wrap: wrap;')
+        dl.product-feature__row
+          dt.product-feature__col
+
+            span Автор
+          dd.product-feature__col
+
+            a(href='/') Чепикова Ксения
+        dl.product-feature__row
+          dt.product-feature__col
+
+            span Издательство
+          dd.product-feature__col
+
+            a(href='/') Яуза-каталог
+        dl.product-feature__row
+          dt.product-feature__col
+
+            span Год выпуска
+          dd.product-feature__col
+
+            span 2019
+        dl.product-feature__row
+          dt.product-feature__col
+
+            span Тип обложки
+          dd.product-feature__col
+
+            span Твердый переплет
+        dl.product-feature__row
+          dt.product-feature__col
+
+            span Формат издания
+          dd.product-feature__col
+
+            span 130x205
+        dl.product-feature__row
+          dt.product-feature__col
+
+            span Возрастные ограничения
+          dd.product-feature__col
+
+            span 16+
+        dl.product-feature__row
+          dt.product-feature__col
+
+            span Количество страниц
+          dd.product-feature__col
+
+            span 416
+        dl.product-feature__row
+          dt.product-feature__col
+
+            span Язык издания
+          dd.product-feature__col
+
+            span Русский
+        dl.product-feature__row
+          dt.product-feature__col
+
+            span ISBN
+          dd.product-feature__col
+
+            span 978-5-00155-138-6
+
+
 .smart-basket__wrapper
